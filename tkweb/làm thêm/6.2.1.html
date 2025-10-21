@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body><script>
+        function add(){
+            let num1=parseInt(document.getElementById('num1').value);
+            let num2=parseInt(document.getElementById('num2').value);
+            document.getElementById('result1').innerHTML="result Addition :" + (num1+num2);
+
+        }
+        function sub(){
+            let num1=parseInt(document.getElementById('num1').value);
+            let num2=parseInt(document.getElementById('num2').value);
+            document.getElementById('result2').innerHTML="result Subtraction :" + (num1-num2);
+
+        }
+        function nhan(){
+            let num1=parseInt(document.getElementById('num1').value);
+            let num2=parseInt(document.getElementById('num2').value);
+            document.getElementById('result3').innerHTML="result Multipcation :" + (num1*num2);
+
+        }
+        function chia(){
+            let num1=parseInt(document.getElementById('num1').value);
+            let num2=parseInt(document.getElementById('num2').value);
+            document.getElementById('result4').innerHTML="result Division :" + (num1/num2);
+
+        }
+    </script>
+    <h1>Caculator</h1>
+    <input type="text" id="num1" value="">
+    <input type="text" id="num2" value="">
+        <br><button onclick="add()">Addition(+)</button>
+        <button onclick="sub()">Subtraction(-)</button>
+        <button onclick="nhan()">Multipcation(X)</button>
+        <button onclick="chia()">Division(/)</button>
+        <p id="result1"></p>
+        <p id="result2"></p>
+        <p id="result3"></p>
+        <p id="result4"></p>
+
+</body> 
+</html>

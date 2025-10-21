@@ -1,0 +1,49 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: linear-gradient(#000000, #330000);
+  color: white;
+  background-image: url("images/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 140, 0, 0.8);
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: black;
+  background-color: #ffa500;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Phần giới thiệu */
+#intro {
+  text-align: center;
+  margin: 80px auto;
+  max-width: 700px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(255, 140, 0, 0.8);
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

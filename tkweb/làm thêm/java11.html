@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Các sản phẩn:</h1>
+    <div id="Product_list">
+    </div> 
+    <button id="add" onclick="add()">Thêm</button>
+    <button id="edit" onclick="edit()">Edit</button>
+    <button id="del" onclick="del()">Delete</button>
+    <script>
+        let ds = ['Bánh','Sữa','Kem']; //ds[2]
+        function show(){
+            var s = '';
+            for(var i = 0; i<ds.length; i++){
+                s = s + (i+1) + "." + ds[i] + "<br>";
+
+            }
+            return s;
+        }
+        function add(){
+            var newProduct = prompt("Nhap ten san pham moi");
+            ds.push(newProduct);
+            document.getElementById('Product_list').innerHTML = show();
+        }
+        function edit(){
+            var index = prompt("Nhap thu tu san pham can chinh sua");
+            var newname = prompt("Nhap ten san pham moi");
+            ds[index-1] = newname;
+            document.getElementById('Product_list').innerHTML = show();
+        }
+        function del(){
+            var index = prompt("Nhap so thu tu can xoa");
+            ds.splice(index-1,1);
+            document.getElementById('Product_list').innerHTML = show();
+
+        }
+        
+      document.getElementById('Product_list').innerHTML = show();
+    </script>
+
+</body>
+</html>
